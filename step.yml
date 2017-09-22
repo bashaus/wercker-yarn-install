@@ -1,0 +1,23 @@
+name: yarn-install
+version: 0.0.1
+summary: |
+  Install Node dependencies via Yarn. Saves cache to the $WERCKER_CACHE_DIR for
+  persistence.
+tags:
+  - yarn
+  - node
+
+properties:
+  - name: clear-cache-on-failed
+    type: bool
+    required: false
+    default: "true"
+
+  - name: production
+    type: bool
+    required: false
+    default: "false"
+
+  - name: opts
+    type: string
+    required: false
