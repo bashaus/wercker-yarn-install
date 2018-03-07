@@ -9,4 +9,4 @@ build:
 publish:
   steps:
     - internal/publish-step:
-        owner: bashaus
+      owner: bashaus
